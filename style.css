@@ -33,7 +33,7 @@ body {
     left: 0;
     width: 100%;
     /* padding: 0.1px 112.5%; */
-    background: yellowgreen;
+    background: rgb(50, 205, 78);
     display: flex;
     justify-content: space-between;
     align-items: left;
@@ -48,10 +48,11 @@ body {
     border-radius: 6px;
     display: flex;
     align-items: center;
+    background-color: #f2f2f2;
 }
 
 .search-bar input {
-    width: 100%;
+    width: 200%;
     background: transparent;
     border: none;
     outline: none;
@@ -78,8 +79,15 @@ body {
 
 .search-bar button i {
     font-size: 14px;
-    color: #e4e4e4;
+    color: #333333;
+    align-items: right;
+    padding-left: 15%;
+    font-size: large;
 
+}
+
+.search-bar input[type="text"]{
+    padding-right: 80%;
 }
   
 .tabs {
