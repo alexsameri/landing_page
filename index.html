@@ -4,59 +4,105 @@
     <meta charset="UTF-8">
     <title>Landing page</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
-    <h1>Welcome to my landing page</h1>
+    <div id="header">
+      <h1>Welcome to my landing page</h1>
+      <form action="#" class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">
+          <i class='bx bx-search-alt-2'></i>
+        </button>
+      </form>
+    </div>
+
+    
+  
+    </div>
     <div class="tabs">
-        <div class="tab active">Home</div>
-        <div class="tab">About</div>
-        <div class="tab">Services</div>
-        <div class="tab">Contact</div>
-      </div>
+      <div class="tab active">Home</div>
+      <div class="tab">About</div>
+      <div class="tab">Services</div>
+      <div class="tab">Contact</div>
+    </div>
+    
+    <div class="content">
+      <h2>Home</h2>
+      <p>This is a landing page that introduces and gives an overview
+          of an app in a better category
+      </p>
       
-      <div class="content">
-        <h2>Home</h2>
-        <p>This is a landing page that introduces and gives an overview
-            of an app in a better category
-        </p>
-      </div>
+    </div>
+    
+    <div class="content" style="display: none;">
+      <h2>About</h2>
+      <p>It is a web app which introduces you to a sign up Page
+          to sign up in the app for better understandability
+      </p>
+    </div>
       
-      <div class="content" style="display: none;">
-        <h2>About</h2>
-        <p>It is a web app which introduces you to a sign up Page
-            to sign up in the app for better understandability
-        </p>
+    <div class="content" style="display: none;">
+      <h2>Services</h2>
+      <p>This app gives services in terms of giving out a 
+          platform where employers can display their jobs
+      </p>
+    </div>
+    
+    <div class="content" style="display: none;">
+      <h2>Contact</h2>
+      <p>+254712345678</p>
+    </div>
+    <div class="signin">
+      <div class="container">
+        <div class="login-form">
+          
+            <form>
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label><br>
+        
+              <input type="submit" value="Sign in"> <br>
+              
+              <p><a href="main.html">Register</a></p>
+            </form>
+            
+          
+        </div>
+        
+        </div>
       </div>
-      
-      <div class="content" style="display: none;">
-        <h2>Services</h2>
-        <p>This app gives services in terms of giving out a 
-            platform where employers can display their jobs
-        </p>
-      </div>
-      
-      <div class="content" style="display: none;">
-        <h2>Contact</h2>
-        <p>+254712345678</p>
-      </div>
-      
-      <div class="footer">
+    </div>
+
+
+    <div class="footer">
+      <div class="copyright">
         <p>&copy; Copyright. All rights reserved.</p>
       </div>
+    </div>
+    <script>
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.content');
       
-      <script>
-        const tabs = document.querySelectorAll('.tab');
-        const contents = document.querySelectorAll('.content');
-        
-        tabs.forEach((tab, index) => {
-          tab.addEventListener('click', () => {
-            tabs.forEach((tab) => tab.classList.remove('active'));
-            contents.forEach((content) => content.style.display = 'none');
-            
-            tab.classList.add('active');
-            contents[index].style.display = 'block';
-          });
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+          tabs.forEach((tab) => tab.classList.remove('active'));
+          contents.forEach((content) => content.style.display = 'none');
+          
+          tab.classList.add('active');
+          contents[index].style.display = 'block';
         });
-      </script>
+      });
+    </script>
 </body>
 </html>
