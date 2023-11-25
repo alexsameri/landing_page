@@ -41,7 +41,7 @@ body {
 }
 
 .search-bar {
-    width: 250px;
+    width: 200px;
     height: 45px;
     background: transparent;
     border: 2px solid #e4e4e4;
@@ -61,7 +61,7 @@ body {
 }
 
 .search-bar input::placeholder {
-    color: #e4e4e4;
+    color: #333333;
 }
 
 .search-bar button {
@@ -79,6 +79,7 @@ body {
 .search-bar button i {
     font-size: 14px;
     color: #e4e4e4;
+
 }
   
 .tabs {
@@ -97,9 +98,10 @@ body {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    color: #f2f2f2;
 }
   
-.tab.active{
+.tab.active {
     background-color: #ff9900;
     color: #ffffff;
     border-radius: 10px;
@@ -123,12 +125,12 @@ body {
     position: relative;
     transform: translate(0%, -0.7%);
     width: 1500px;
-    height: 500px;
+    height: 700px;
     background: url(/images/pexels-philippe-donn-1169754.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 0px;
     margin-top: 20px;
     padding: 100px;
     padding-right: 50px;
@@ -144,7 +146,7 @@ body {
     color: #f2f2f2;
 }
 
-.form-group p {
+.login-form a {
     color: #ffffff;
 }
 
